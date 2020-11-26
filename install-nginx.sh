@@ -25,7 +25,7 @@ unzip ngx_log_if.zip
 cd nginx-1.19.5
 #start install
 ./configure \
---prefix=/etc/nginx \
+--prefix=/usr/share/nginx \
 --sbin-path=/usr/sbin/nginx \
 --pid-path=/var/run/nginx.pid \
 --lock-path=/var/run/nginx.lock \
