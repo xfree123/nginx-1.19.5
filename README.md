@@ -1,2 +1,2 @@
-# nginx-1.9.5
-Auto Install NGinx 1.9.5 Centos 8
+# nginx-1.19.5
+Auto Install NGinx 1.19.5 Centos 8
