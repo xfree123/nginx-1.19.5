@@ -152,7 +152,7 @@ http {
 	more_set_headers    "Server: Custom Nginx";
 	more_set_headers "X-Powered-By: NGINX";
 #config for websocket	
-	map $http_upgrade $connection_upgrade {
+	map \$http_upgrade \$connection_upgrade {
 							default upgrade;
 							'' close;
 	}
