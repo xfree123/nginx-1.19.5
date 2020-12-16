@@ -97,9 +97,9 @@ PIDFile=/var/run/nginx.pid
 ExecStartPre=/usr/sbin/nginx -t
 ExecStart=/usr/sbin/nginx
 ExecReload=/usr/sbin/nginx -s reload
-ExecStop=/bin/kill -s QUIT $MAINPID
+ExecStop=/bin/kill -s QUIT \$MAINPID
 PrivateTmp=true
-LimitNOFILE=65536
+LimitNOFILE=200000
 
 [Install]
 WantedBy=multi-user.target
