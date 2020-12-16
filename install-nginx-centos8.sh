@@ -150,7 +150,7 @@ http {
     include			/etc/nginx/mime.types;
     default_type		application/octet-stream;
  
-	more_set_headers    "Server: Custom Nginx";
+	more_set_headers    "Server: Nginx";
 	more_set_headers "X-Powered-By: NGINX";
 #config for websocket	
 	map \$http_upgrade \$connection_upgrade {
