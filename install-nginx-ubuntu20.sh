@@ -120,7 +120,7 @@ cat > "/etc/nginx/nginx.conf" << END
 # Server Global
 user  			nginx;
 worker_processes auto;
-worker_rlimit_nofile 100000;
+worker_rlimit_nofile 20000;
 timer_resolution 100ms;
 pcre_jit on;
 
@@ -138,7 +138,7 @@ load_module "/etc/nginx/modules/ngx_stream_module.so";
 
 # Worker Config
 events {
-	worker_connections 4000;
+	worker_connections 10000;
 	use epoll;
 	multi_accept on;
 }
